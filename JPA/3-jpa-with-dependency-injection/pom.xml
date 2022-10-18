@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>plain.java</groupId>
+		<artifactId>JPA</artifactId>
+		<version>0.1</version>
+	</parent>
+
+	<artifactId>3-jpa-with-dependency-injection</artifactId>
+
+	<packaging>jar</packaging>
+
+	<properties>
+
+		<weld.cdi.se.version>5.0.1.Final</weld.cdi.se.version>
+
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-shaded -->
+		<dependency>
+			<groupId>org.jboss.weld.se</groupId>
+			<artifactId>weld-se-shaded</artifactId>
+			<version>${weld.cdi.se.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
